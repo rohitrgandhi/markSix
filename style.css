@@ -1,25 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #F2C94C;
+    --black: black;
+}
+
+body {
+    margin: 0;
     font-family: 'Comic Neue', cursive;
-}
-
-header{
-    text-align:center;
-    
-}
-section{
-    color:#F2C94C;
-    font-size: 2rem;
-}
-
-button{
-    font-size: xx-large;
-    width:min-content;
-    height:20px;
-}
-
-footer{
+    color: black;
     font-style: italic;
+}
+
+nav {
+    background-color: var(--primary);
     text-align: center;
+    border-radius: 1rem;
+}
+
+main {
+    margin: auto;
+    padding: 2rem;
+    width: 600px;
+    text-align: center;
+}
+
+.img-specs{
+    width:100px;
+}
+textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 1rem;
+    font-size: large;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--primary);
+    border: none;
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+    font-family: 'Comic Neue', cursive;
+    font-size: x-large;
+}
+
+
+#translate-output {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 10vh;
+    max-height: 20vh;
+    border: 1px solid var(--black);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+footer p {
+    width: 600px;
+    margin: auto;
 }

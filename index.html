@@ -3,48 +3,37 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>minion speak</title>
-    <link href="/style.css" rel="spreadsheet" />
-    <style>
-        #button {
-            padding: 1rem 1rem;
-            width: auto;
-            height: auto;
-        }
-
-        output {
-            padding: 1rem 1rem;
-            width: auto;
-            height: auto;
-        }
-    </style>
+    <title>minion talk</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <header>
-        <section>
-            <h1>
-                minion speak
-                <p>have you ever wondered how minions speak</p>
-            </h1>
-        </section>
-    </header>
+<body background="images/banana-bg.png">
+    <nav>
+        <div style="font-size: 4rem; padding: 1rem;">
+            Minion Talk
+        </div>
 
-    <textarea placeholder="Enter text to convert it into minion language">    </textarea>
+    </nav>
+    <main>
+        <textarea id="translate-input"
+            placeholder="Drop your text to convert it to Banana"></textarea>
 
-    <nav></nav>
-    <button class="button">
-        Translate to BANANA
-    </button>
+        <button id="translate-button"> Translate To Banana</button>
 
-    <div class="output">
-    </div>
+        <div>Your text is translated below</div>
+
+        <div id="translate-output" style="padding: 1rem; font-size: large;"></div>
+    </main>
 
     <footer>
-        Use the above textbox to convert your text from English to Banana. Have FUN!
+        <div>About</div>
+
+        <p>Use the translator
+            to convert your text from English to Minion speak or Banana language.</p>
     </footer>
+
+    <script src="/markSix/app.js" type="text/javascript"> </script>
 </body>
 
 </html>
