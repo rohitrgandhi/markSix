@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: 'Comic Neue', cursive;
     color: black;
-    font-style: italic;
+    
 }
 
 nav {
@@ -58,6 +58,7 @@ button {
     min-height: 10vh;
     max-height: 20vh;
     border: 1px solid var(--black);
+    padding: 1rem; font-size: large;
 }
 
 footer {
